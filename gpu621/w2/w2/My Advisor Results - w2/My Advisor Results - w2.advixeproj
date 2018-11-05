@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+ <connectionOption>localhost</connectionOption>
+ <rdmgr>
+  <timestamp type="u64_t">1537755015</timestamp>
+  <hostname>DESKTOP-L6MVASH</hostname>
+  <os>windows</os>
+  <product>Intel® Advisor 2019</product>
+  <buildNumber type="s32_t">570901</buildNumber>
+  <logicalCPUCount type="s32_t">8</logicalCPUCount>
+  <physicalCoreCount type="s32_t">4</physicalCoreCount>
+  <CPUFrequency type="s64_t">4000000000</CPUFrequency>
+  <CPUFamily type="s32_t">6</CPUFamily>
+  <CPUModel type="s32_t">94</CPUModel>
+  <CPUStepping type="s32_t">3</CPUStepping>
+  <CPUBrandName>Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz</CPUBrandName>
+  <isa>avx2</isa>
+ </rdmgr>
+ <contextValues type="bag"/>
+ <All_Configurations-All_Platforms>
+  <per_group_workloads>
+   <release>release</release>
+  </per_group_workloads>
+  <searchDirs>
+   <searchCategory>
+    <category type="u8_t">1</category>
+   </searchCategory>
+   <searchCategory>
+    <category type="u8_t">2</category>
+   </searchCategory>
+   <searchCategory>
+    <category type="u8_t">3</category>
+   </searchCategory>
+   <searchCategory>
+    <category type="u8_t">4</category>
+   </searchCategory>
+  </searchDirs>
+  <excludeFiles type="bag"/>
+  <target_settings>
+   <selected_workload>
+    <localhost>release</localhost>
+   </selected_workload>
+   <result_dir>
+    <localhost>F:\Desktop\c++ GPU621\w2\w2\w2\My Advisor Results - w2</localhost>
+   </result_dir>
+   <result_pattern>
+    <localhost>r@@@{at}</localhost>
+   </result_pattern>
+   <workloads>
+    <localhost>
+     <attach-survey type="pointer" type_id="dasID_cctrl2::AttachWorkload" ptr_type="dasID_cctrl2::IWorkload">
+      <workload>
+       <targetName>attach-survey</targetName>
+       <use_app_dir_as_work_dir type="bool">false</use_app_dir_as_work_dir>
+       <attach.process_name>w2.exe</attach.process_name>
+       <attach.pid type="null"></attach.pid>
+       <result_directory.path>F:\Desktop\c++ GPU621\w2\w2\w2\My Advisor Results - w2\r@@@{at}</result_directory.path>
+       <search_directories>
+        <item>
+         <value>sym=F:\Desktop\c++ GPU621\w2\w2\x64\Release</value>
+        </item>
+        <item>
+         <value>sym=F:\Desktop\c++ GPU621\w2\w2</value>
+        </item>
+        <item>
+         <value>bin=F:\Desktop\c++ GPU621\w2\w2\x64\Release</value>
+        </item>
+        <item>
+         <value>bin=F:\Desktop\c++ GPU621\w2\w2</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\bin\HostX86\x64</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\bin\HostX86\x86</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Windows Kits\10\bin\10.0.17134.0\x86</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\tools</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\ide</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\HTML Help Workshop</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Windows\Microsoft.NET\Framework\v4.0.30319</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.0.117\windows\mpi\intel64\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\mpirt</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32_win\mpirt</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32_win\compiler</value>
+        </item>
+        <item>
+         <value>bin=C:\Windows\system32</value>
+        </item>
+        <item>
+         <value>bin=C:\Windows</value>
+        </item>
+        <item>
+         <value>bin=C:\Windows\System32\Wbem</value>
+        </item>
+        <item>
+         <value>bin=C:\Windows\System32\WindowsPowerShell\v1.0</value>
+        </item>
+        <item>
+         <value>bin=C:\Windows\System32\OpenSSH</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\dotnet</value>
+        </item>
+        <item>
+         <value>bin=F:\Git\cmd</value>
+        </item>
+        <item>
+         <value>bin=C:\Users\vince\AppData\Local\Microsoft\WindowsApps</value>
+        </item>
+        <item>
+         <value>bin=F:\Microsoft VS Code\bin</value>
+        </item>
+       </search_directories>
+       <context>
+        <contextValue>
+         <id>auto_finalize</id>
+         <value type="bool">true</value>
+        </contextValue>
+        <contextValue>
+         <id>dataLimit</id>
+         <value type="s32_t">500</value>
+        </contextValue>
+        <contextValue>
+         <id>interval</id>
+         <value type="s32_t">10</value>
+        </contextValue>
+        <contextValue>
+         <id>mklUserMode</id>
+         <value type="bool">true</value>
+        </contextValue>
+        <contextValue>
+         <id>modules_switch</id>
+         <value>knob.modules_switch.exclude</value>
+        </contextValue>
+        <contextValue>
+         <id>mrte_mode</id>
+         <value>auto</value>
+        </contextValue>
+        <contextValue>
+         <id>process_for_analysis</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>profilePython</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>spillAnalysis</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>stackStitching</id>
+         <value type="bool">true</value>
+        </contextValue>
+        <contextValue>
+         <id>stackwalk</id>
+         <value>offline</value>
+        </contextValue>
+        <contextValue>
+         <id>static_instruction_mix</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>support_multi_isa_binaries</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>targetType</id>
+         <value>attach-survey</value>
+        </contextValue>
+       </context>
+      </workload>
+     </attach-survey>
+     <debug type="pointer" type_id="dasID_cctrl2::ApplicationWorkload" ptr_type="dasID_cctrl2::IWorkload">
+      <workload>
+       <targetName>debug</targetName>
+       <launch_app.app_to_launch>F:\Desktop\c++ GPU621\w2\w2\x64\Release\w2.exe</launch_app.app_to_launch>
+       <launch_app.working_folder>F:\Desktop\c++ GPU621\w2\w2\w2</launch_app.working_folder>
+       <launch_app.app_parameters>100000000</launch_app.app_parameters>
+       <launch_app.environment_prepend>PATH=C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019\windows\redist\intel64\compiler;</launch_app.environment_prepend>
+       <use_app_dir_as_work_dir type="bool">false</use_app_dir_as_work_dir>
+       <result_directory.path>F:\Desktop\c++ GPU621\w2\w2\w2\My Advisor Results - w2\r@@@{at}</result_directory.path>
+       <search_directories>
+        <item>
+         <value>sym=F:\Desktop\c++ GPU621\w2\w2\x64\Release</value>
+        </item>
+        <item>
+         <value>sym=F:\Desktop\c++ GPU621\w2\w2</value>
+        </item>
+        <item>
+         <value>bin=F:\Desktop\c++ GPU621\w2\w2\x64\Release</value>
+        </item>
+        <item>
+         <value>bin=F:\Desktop\c++ GPU621\w2\w2</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\bin\HostX86\x64</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\bin\HostX86\x86</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Windows Kits\10\bin\10.0.17134.0\x86</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\tools</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\ide</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\HTML Help Workshop</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Windows\Microsoft.NET\Framework\v4.0.30319</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.0.117\windows\mpi\intel64\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\mpirt</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32_win\mpirt</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32_win\compiler</value>
+        </item>
+        <item>
+         <value>bin=C:\Windows\system32</value>
+        </item>
+        <item>
+         <value>bin=C:\Windows</value>
+        </item>
+        <item>
+         <value>bin=C:\Windows\System32\Wbem</value>
+        </item>
+        <item>
+         <value>bin=C:\Windows\System32\WindowsPowerShell\v1.0</value>
+        </item>
+        <item>
+         <value>bin=C:\Windows\System32\OpenSSH</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\dotnet</value>
+        </item>
+        <item>
+         <value>bin=F:\Git\cmd</value>
+        </item>
+        <item>
+         <value>bin=C:\Users\vince\AppData\Local\Microsoft\WindowsApps</value>
+        </item>
+        <item>
+         <value>bin=F:\Microsoft VS Code\bin</value>
+        </item>
+       </search_directories>
+       <context>
+        <contextValue>
+         <id>analysis_mode</id>
+         <value>default</value>
+        </contextValue>
+        <contextValue>
+         <id>loop_call_count_limit</id>
+         <value type="s32_t">0</value>
+        </contextValue>
+        <contextValue>
+         <id>loops</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>mark-up-list</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>mrte_mode</id>
+         <value>auto</value>
+        </contextValue>
+        <contextValue>
+         <id>process_for_analysis</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>reduction_filtering</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>scope_filtering</id>
+         <value type="bool">true</value>
+        </contextValue>
+        <contextValue>
+         <id>stack_offset</id>
+         <value type="bool">true</value>
+        </contextValue>
+        <contextValue>
+         <id>stop_after</id>
+         <value type="s32_t">0</value>
+        </contextValue>
+        <contextValue>
+         <id>suppressions</id>
+         <value>none</value>
+        </contextValue>
+        <contextValue>
+         <id>targetType</id>
+         <value>debug</value>
+        </contextValue>
+        <contextValue>
+         <id>vsdbg_support</id>
+         <value>off</value>
+        </contextValue>
+       </context>
+      </workload>
+     </debug>
+     <map type="pointer" type_id="dasID_cctrl2::ApplicationWorkload" ptr_type="dasID_cctrl2::IWorkload">
+      <workload>
+       <targetName>map</targetName>
+       <launch_app.app_to_launch>F:\Desktop\c++ GPU621\w2\w2\x64\Release\w2.exe</launch_app.app_to_launch>
+       <launch_app.working_folder>F:\Desktop\c++ GPU621\w2\w2\w2</launch_app.working_folder>
+       <launch_app.app_parameters>100000000</launch_app.app_parameters>
+       <launch_app.environment_prepend>PATH=C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019\windows\redist\intel64\compiler;</launch_app.environment_prepend>
+       <use_app_dir_as_work_dir type="bool">false</use_app_dir_as_work_dir>
+       <result_directory.path>F:\Desktop\c++ GPU621\w2\w2\w2\My Advisor Results - w2\r@@@{at}</result_directory.path>
+       <search_directories>
+        <item>
+         <value>sym=F:\Desktop\c++ GPU621\w2\w2\x64\Release</value>
+        </item>
+        <item>
+         <value>sym=F:\Desktop\c++ GPU621\w2\w2</value>
+        </item>
+        <item>
+         <value>bin=F:\Desktop\c++ GPU621\w2\w2\x64\Release</value>
+        </item>
+        <item>
+         <value>bin=F:\Desktop\c++ GPU621\w2\w2</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\bin\HostX86\x64</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\bin\HostX86\x86</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Windows Kits\10\bin\10.0.17134.0\x86</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\tools</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\ide</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\HTML Help Workshop</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Windows\Microsoft.NET\Framework\v4.0.30319</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.0.117\windows\mpi\intel64\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\mpirt</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32_win\mpirt</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32_win\compiler</value>
+        </item>
+        <item>
+         <value>bin=C:\Windows\system32</value>
+        </item>
+        <item>
+         <value>bin=C:\Windows</value>
+        </item>
+        <item>
+         <value>bin=C:\Windows\System32\Wbem</value>
+        </item>
+        <item>
+         <value>bin=C:\Windows\System32\WindowsPowerShell\v1.0</value>
+        </item>
+        <item>
+         <value>bin=C:\Windows\System32\OpenSSH</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\dotnet</value>
+        </item>
+        <item>
+         <value>bin=F:\Git\cmd</value>
+        </item>
+        <item>
+         <value>bin=C:\Users\vince\AppData\Local\Microsoft\WindowsApps</value>
+        </item>
+        <item>
+         <value>bin=F:\Microsoft VS Code\bin</value>
+        </item>
+       </search_directories>
+       <context>
+        <contextValue>
+         <id>cachesimAssociativity</id>
+         <value>8</value>
+        </contextValue>
+        <contextValue>
+         <id>cachesimSets</id>
+         <value>4096</value>
+        </contextValue>
+        <contextValue>
+         <id>cachesim_cacheline_size</id>
+         <value>64</value>
+        </contextValue>
+        <contextValue>
+         <id>cachesim_mode</id>
+         <value>utilization</value>
+        </contextValue>
+        <contextValue>
+         <id>enableCacheSimulation</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>loop_call_count_limit</id>
+         <value type="s32_t">0</value>
+        </contextValue>
+        <contextValue>
+         <id>loops</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>mark-up-list</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>mrte_mode</id>
+         <value>auto</value>
+        </contextValue>
+        <contextValue>
+         <id>process_for_analysis</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>recordHeapMemory</id>
+         <value type="bool">true</value>
+        </contextValue>
+        <contextValue>
+         <id>recordStackFrame</id>
+         <value type="bool">true</value>
+        </contextValue>
+        <contextValue>
+         <id>suppressions</id>
+         <value>none</value>
+        </contextValue>
+        <contextValue>
+         <id>targetType</id>
+         <value>map</value>
+        </contextValue>
+       </context>
+      </workload>
+     </map>
+     <release type="pointer" type_id="dasID_cctrl2::ApplicationWorkload" ptr_type="dasID_cctrl2::IWorkload">
+      <workload>
+       <targetName>release</targetName>
+       <launch_app.inherit_sys_environment type="bool">true</launch_app.inherit_sys_environment>
+       <launch_app.mpi_run type="bool">false</launch_app.mpi_run>
+       <launch.userapppath>F:\Desktop\c++ GPU621\w2\w2\x64\Release\w2.exe</launch.userapppath>
+       <launch.userappworkdir>F:\Desktop\c++ GPU621\w2\w2\w2</launch.userappworkdir>
+       <launch_app.mpi_max_rank type="null"></launch_app.mpi_max_rank>
+       <launch_app.app_to_launch>F:\Desktop\c++ GPU621\w2\w2\x64\Release\w2.exe</launch_app.app_to_launch>
+       <launch_app.working_folder>F:\Desktop\c++ GPU621\w2\w2\w2</launch_app.working_folder>
+       <launch_app.app_parameters>100000000</launch_app.app_parameters>
+       <launch_app.environment_prepend>PATH=C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019\windows\redist\intel64\compiler;</launch_app.environment_prepend>
+       <use_app_dir_as_work_dir type="bool">false</use_app_dir_as_work_dir>
+       <result_directory.path>F:\Desktop\c++ GPU621\w2\w2\w2\My Advisor Results - w2\r@@@{at}</result_directory.path>
+       <search_directories>
+        <item>
+         <value>sym=F:\Desktop\c++ GPU621\w2\w2\x64\Release</value>
+        </item>
+        <item>
+         <value>sym=F:\Desktop\c++ GPU621\w2\w2</value>
+        </item>
+        <item>
+         <value>bin=F:\Desktop\c++ GPU621\w2\w2\x64\Release</value>
+        </item>
+        <item>
+         <value>bin=F:\Desktop\c++ GPU621\w2\w2</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\bin\HostX86\x64</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\bin\HostX86\x86</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Windows Kits\10\bin\10.0.17134.0\x86</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\tools</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\ide</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\HTML Help Workshop</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Windows\Microsoft.NET\Framework\v4.0.30319</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.0.117\windows\mpi\intel64\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\mpirt</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32_win\mpirt</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32_win\compiler</value>
+        </item>
+        <item>
+         <value>bin=C:\Windows\system32</value>
+        </item>
+        <item>
+         <value>bin=C:\Windows</value>
+        </item>
+        <item>
+         <value>bin=C:\Windows\System32\Wbem</value>
+        </item>
+        <item>
+         <value>bin=C:\Windows\System32\WindowsPowerShell\v1.0</value>
+        </item>
+        <item>
+         <value>bin=C:\Windows\System32\OpenSSH</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\dotnet</value>
+        </item>
+        <item>
+         <value>bin=F:\Git\cmd</value>
+        </item>
+        <item>
+         <value>bin=C:\Users\vince\AppData\Local\Microsoft\WindowsApps</value>
+        </item>
+        <item>
+         <value>bin=F:\Microsoft VS Code\bin</value>
+        </item>
+       </search_directories>
+       <context>
+        <contextValue>
+         <id>auto_finalize</id>
+         <value type="bool">true</value>
+        </contextValue>
+        <contextValue>
+         <id>dataLimit</id>
+         <value type="s32_t">500</value>
+        </contextValue>
+        <contextValue>
+         <id>interval</id>
+         <value type="s32_t">10</value>
+        </contextValue>
+        <contextValue>
+         <id>mklUserMode</id>
+         <value type="bool">true</value>
+        </contextValue>
+        <contextValue>
+         <id>modules_switch</id>
+         <value>knob.modules_switch.exclude</value>
+        </contextValue>
+        <contextValue>
+         <id>mrte_mode</id>
+         <value>auto</value>
+        </contextValue>
+        <contextValue>
+         <id>process_for_analysis</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>profilePython</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>spillAnalysis</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>stackStitching</id>
+         <value type="bool">true</value>
+        </contextValue>
+        <contextValue>
+         <id>stackwalk</id>
+         <value>offline</value>
+        </contextValue>
+        <contextValue>
+         <id>static_instruction_mix</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>support_multi_isa_binaries</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>targetType</id>
+         <value>release</value>
+        </contextValue>
+       </context>
+      </workload>
+     </release>
+     <suitability type="pointer" type_id="dasID_cctrl2::ApplicationWorkload" ptr_type="dasID_cctrl2::IWorkload">
+      <workload>
+       <targetName>suitability</targetName>
+       <launch_app.app_to_launch>F:\Desktop\c++ GPU621\w2\w2\x64\Release\w2.exe</launch_app.app_to_launch>
+       <launch_app.working_folder>F:\Desktop\c++ GPU621\w2\w2\w2</launch_app.working_folder>
+       <launch_app.app_parameters>100000000</launch_app.app_parameters>
+       <launch_app.environment_prepend>PATH=C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019\windows\redist\intel64\compiler;</launch_app.environment_prepend>
+       <use_app_dir_as_work_dir type="bool">false</use_app_dir_as_work_dir>
+       <result_directory.path>F:\Desktop\c++ GPU621\w2\w2\w2\My Advisor Results - w2\r@@@{at}</result_directory.path>
+       <search_directories>
+        <item>
+         <value>sym=F:\Desktop\c++ GPU621\w2\w2\x64\Release</value>
+        </item>
+        <item>
+         <value>sym=F:\Desktop\c++ GPU621\w2\w2</value>
+        </item>
+        <item>
+         <value>bin=F:\Desktop\c++ GPU621\w2\w2\x64\Release</value>
+        </item>
+        <item>
+         <value>bin=F:\Desktop\c++ GPU621\w2\w2</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\bin\HostX86\x64</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\bin\HostX86\x86</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Windows Kits\10\bin\10.0.17134.0\x86</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\tools</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\ide</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\HTML Help Workshop</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Windows\Microsoft.NET\Framework\v4.0.30319</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.0.117\windows\mpi\intel64\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\mpirt</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32_win\mpirt</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32_win\compiler</value>
+        </item>
+        <item>
+         <value>bin=C:\Windows\system32</value>
+        </item>
+        <item>
+         <value>bin=C:\Windows</value>
+        </item>
+        <item>
+         <value>bin=C:\Windows\System32\Wbem</value>
+        </item>
+        <item>
+         <value>bin=C:\Windows\System32\WindowsPowerShell\v1.0</value>
+        </item>
+        <item>
+         <value>bin=C:\Windows\System32\OpenSSH</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\dotnet</value>
+        </item>
+        <item>
+         <value>bin=F:\Git\cmd</value>
+        </item>
+        <item>
+         <value>bin=C:\Users\vince\AppData\Local\Microsoft\WindowsApps</value>
+        </item>
+        <item>
+         <value>bin=F:\Microsoft VS Code\bin</value>
+        </item>
+       </search_directories>
+       <context>
+        <contextValue>
+         <id>dataLimit</id>
+         <value type="s32_t">500</value>
+        </contextValue>
+        <contextValue>
+         <id>interval</id>
+         <value type="s32_t">10</value>
+        </contextValue>
+        <contextValue>
+         <id>mrte_mode</id>
+         <value>auto</value>
+        </contextValue>
+        <contextValue>
+         <id>process_for_analysis</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>targetType</id>
+         <value>suitability</value>
+        </contextValue>
+       </context>
+      </workload>
+     </suitability>
+    </localhost>
+   </workloads>
+  </target_settings>
+ </All_Configurations-All_Platforms>
+</root>
