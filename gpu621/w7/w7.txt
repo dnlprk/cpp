@@ -1,0 +1,117 @@
+OpenMP
+
+OpenMP Prefix Scan
+4194304
+n = 4194304: 3 4 11 11 12 16 21 30 4194326
+Inclusive Prefix Scan - took - 8 milliseconds
+
+OpenMP Prefix Scan
+16777216
+n = 16777216: 3 4 11 11 12 16 21 30 16777238
+Inclusive Prefix Scan - took - 33 milliseconds
+
+OpenMP Prefix Scan
+67108864
+n = 67108864: 3 4 11 11 12 16 21 30 67108886
+Inclusive Prefix Scan - took - 115 milliseconds
+
+TBB
+
+AUTO
+TBB Prefix Scan - auto partitioning
+n = 4194304: 3 4 11 11 12 16 21 30 4194326
+Inclusive Prefix Scan - took - 4 milliseconds
+
+TBB Prefix Scan - auto partitioning
+n = 16777216: 3 4 11 11 12 16 21 30 16777238
+Inclusive Prefix Scan - took - 13 milliseconds
+
+TBB Prefix Scan - auto partitioning
+n = 67108864: 3 4 11 11 12 16 21 30 67108886
+Inclusive Prefix Scan - took - 51 milliseconds
+
+10 grain
+TBB Prefix Scan - grainsize = 10
+n = 4194304: 3 4 11 11 12 16 21 30 4194326
+Inclusive Prefix Scan - took - 5 milliseconds
+
+TBB Prefix Scan - grainsize = 10
+n = 16777216: 3 4 11 11 12 16 21 30 16777238
+Inclusive Prefix Scan - took - 17 milliseconds
+
+TBB Prefix Scan - grainsize = 10
+n = 67108864: 3 4 11 11 12 16 21 30 67108886
+Inclusive Prefix Scan - took - 52 milliseconds
+
+
+100 grain
+TBB Prefix Scan - grainsize = 100
+n = 4194304: 3 4 11 11 12 16 21 30 4194326
+Inclusive Prefix Scan - took - 5 milliseconds
+
+TBB Prefix Scan - grainsize = 100
+n = 16777216: 3 4 11 11 12 16 21 30 16777238
+Inclusive Prefix Scan - took - 17 milliseconds
+
+TBB Prefix Scan - grainsize = 100
+n = 67108864: 3 4 11 11 12 16 21 30 67108886
+Inclusive Prefix Scan - took - 52 milliseconds
+
+
+1000 grain
+TBB Prefix Scan - grainsize = 1000
+n = 4194304: 3 4 11 11 12 16 21 30 4194326
+Inclusive Prefix Scan - took - 5 milliseconds
+
+TBB Prefix Scan - grainsize = 1000
+n = 16777216: 3 4 11 11 12 16 21 30 16777238
+Inclusive Prefix Scan - took - 15 milliseconds
+
+TBB Prefix Scan - grainsize = 1000
+n = 67108864: 3 4 11 11 12 16 21 30 67108886
+Inclusive Prefix Scan - took - 55 milliseconds
+
+
+#pragma once	
+#include "tbb/tbb.h"
+
+template <typename T, typename C>
+class Body {
+private:
+	T accumul;
+	T* const out;
+	const T* const in;
+	const T identity;
+	const C combine;
+public:
+	Body(T* out_, const T* in_, T i, C c) :
+		accumul(i), out(out_), in(in_),
+		identity(i), combine(c) {}
+
+	Body(Body& b, tbb::split) :
+		accumul(b.identity), out(b.out), in(b.in),
+		identity(b.identity), combine(b.combine) {}
+
+	template<typename Tag>
+	void operator()(
+		const tbb::blocked_range<int>& r, Tag) {
+		T temp = accumul;
+		for (int i = r.begin(); i != r.end();
+			i++) {
+			temp = combine(temp, in[i]);
+			if (Tag::is_final_scan())
+				out[i] = temp;
+		}
+		accumul = temp;
+	}
+
+	void reverse_join(Body& a) {
+		accumul = combine(accumul, a.accumul);
+	}
+	void assign(Body& b) { accumul = b.accumul; }
+	T get_accumul()
+	{
+		return this->accumul;
+	}
+
+};

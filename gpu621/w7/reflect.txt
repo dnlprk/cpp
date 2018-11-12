@@ -1,0 +1,14 @@
+1.
+specifying the grainsize limits the size of each chunk, to small of a grainsize results in lots of overhead in
+starting and stoping each thread, but a large chunk size can also result in the number of chucks being less 
+then the number of hardware threads, leaving threads with nothing to do.
+
+2.
+the first member is a constructor that not only holds the data but an identifier to distinguish between
+a chucks after the splits, next is the split constructor that splits the range to be interated over,
+then a operator() overload for the class that does the actual work on the data starting from that chunks
+start and end point, the reverse_join method brings to chunks back together after they finish, the assignment
+method is used by other methods to assign a new value for accumul.
+
+3. I learned OpenMP is better with smaller array sizes, but doesnt scale compared to tbb, and that tbb and 
+visual studio really dont like each other
