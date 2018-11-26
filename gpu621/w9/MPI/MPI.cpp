@@ -65,8 +65,6 @@ int main(int argc, char** argv) {
 
 		start = clock();
 		// scatter the data to different processors
-
-
 		MPI_Scatter(data, nPerProcess, MPI_FLOAT, MPI_IN_PLACE, 0, MPI_FLOAT, 0, MPI_COMM_WORLD);
 
 		discretize(data, nPerProcess);
