@@ -8,6 +8,7 @@
 #include "math.h"
 #include "time.h"
 #include <mpi.h>
+#include <ctime>
 
 
 
@@ -26,6 +27,7 @@ void discretize(float* data, int n) {
 		else
 			data[i] = (pow(sin(data[i]), cos(data[i])) + pow(cos(data[i]), sin(data[i]))) / 2.0f;
 }
+
 
 int main(int argc, char** argv) {
 
@@ -55,6 +57,7 @@ int main(int argc, char** argv) {
 		start = clock();
 		float* data = (float*)malloc(n * sizeof(float));
 		float* result = (float*)malloc(n * sizeof(float));
+		srand(time(0));
 		for (int i = 0; i < n; i++)
 			data[i] = (float)rand() / RAND_MAX;
 		end = clock();
@@ -62,7 +65,9 @@ int main(int argc, char** argv) {
 
 		start = clock();
 		// scatter the data to different processors
-		MPI_Scatter(data, nPerProcess, MPI_FLOAT, MPI_IN_PLACE, 0, MPI_INT, 0, MPI_COMM_WORLD);
+
+
+		MPI_Scatter(data, nPerProcess, MPI_FLOAT, MPI_IN_PLACE, 0, MPI_FLOAT, 0, MPI_COMM_WORLD);
 
 		discretize(data, nPerProcess);
 		// gather the results from the different processors
@@ -83,7 +88,7 @@ int main(int argc, char** argv) {
 		free(result);
 		// accumulate times from the different processors
 
-		int totalTime = 0;
+		int totalTime = time;
 		for (int i = 1; i < np; i++) {
 			MPI_Recv(&time, 1, MPI_INT, MPI_ANY_SOURCE, MPI_ANY_TAG, MPI_COMM_WORLD, &status);
 			totalTime += time;
@@ -110,4 +115,6 @@ int main(int argc, char** argv) {
 		free(data);
 	}
 	MPI_Finalize();
+
+	printf("%d = %d 0s + %d 1s\n", n, zeroes, n - zeroes);
 }
