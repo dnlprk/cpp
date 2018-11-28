@@ -1,0 +1,17 @@
+1.
+the sending scatter doesnt require a receive buffer, as it isnt receiving anything, the receiving scatter
+is the opposite, since it is receiving the data, it doesnt require anything in the send argument
+2. 
+arg1: time variable declared in the process
+arg2: size of the data
+arg3: datatype of the data
+arg4: destination process (0 in this case for the master)
+arg5: tag (0 in this case, the mast accepts anytag)
+arg6: I assume the channel in which the processes talk to each other
+3.
+MPI didn't proform the task faster then the serial execution and we learned about scattering data chunks of
+data to each each process and gathering them back together after work is done on each chunk.
+I also learned
+int nPerProcess = n / np;
+n = nPerProcess * np;
+is a fancy way of dropping the remainder from n and creating perfect chunk sizes for our processes
