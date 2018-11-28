@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.106
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "memory leak walkthrough", "memory leak walkthrough\memory leak walkthrough.vcxproj", "{A239B738-285C-4B2C-94A5-E46EACED8017}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "race codition", "race codition\race codition.vcxproj", "{5C5B916C-955A-4114-8525-B15776EDE66E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A239B738-285C-4B2C-94A5-E46EACED8017}.Debug|x64.ActiveCfg = Debug|x64
+		{A239B738-285C-4B2C-94A5-E46EACED8017}.Debug|x64.Build.0 = Debug|x64
+		{A239B738-285C-4B2C-94A5-E46EACED8017}.Debug|x86.ActiveCfg = Debug|Win32
+		{A239B738-285C-4B2C-94A5-E46EACED8017}.Debug|x86.Build.0 = Debug|Win32
+		{A239B738-285C-4B2C-94A5-E46EACED8017}.Release|x64.ActiveCfg = Release|x64
+		{A239B738-285C-4B2C-94A5-E46EACED8017}.Release|x64.Build.0 = Release|x64
+		{A239B738-285C-4B2C-94A5-E46EACED8017}.Release|x86.ActiveCfg = Release|Win32
+		{A239B738-285C-4B2C-94A5-E46EACED8017}.Release|x86.Build.0 = Release|Win32
+		{5C5B916C-955A-4114-8525-B15776EDE66E}.Debug|x64.ActiveCfg = Debug|x64
+		{5C5B916C-955A-4114-8525-B15776EDE66E}.Debug|x64.Build.0 = Debug|x64
+		{5C5B916C-955A-4114-8525-B15776EDE66E}.Debug|x86.ActiveCfg = Debug|Win32
+		{5C5B916C-955A-4114-8525-B15776EDE66E}.Debug|x86.Build.0 = Debug|Win32
+		{5C5B916C-955A-4114-8525-B15776EDE66E}.Release|x64.ActiveCfg = Release|x64
+		{5C5B916C-955A-4114-8525-B15776EDE66E}.Release|x64.Build.0 = Release|x64
+		{5C5B916C-955A-4114-8525-B15776EDE66E}.Release|x86.ActiveCfg = Release|Win32
+		{5C5B916C-955A-4114-8525-B15776EDE66E}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E4F359D9-1FBD-43B3-8816-00027A68B148}
+	EndGlobalSection
+EndGlobal
